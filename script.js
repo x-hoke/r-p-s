@@ -1,6 +1,30 @@
 const valuesArr = ["ROCK","PAPER","SCISSORS"]
 let playerWins = 0;
 let computerWins = 0;
+let playerSelection;
+
+const paperButton = document.querySelector('#paper')
+const scissorsButton = document.querySelector('#scissors')
+const rockButton = document.querySelector('#rock')
+paperButton.onclick = () => {
+    playerSelection = 'PAPER'
+    console.log(playerSelection)
+}
+scissorsButton.onclick = () =>{
+    playerSelection = 'SCISSORS'
+    console.log(playerSelection)
+} 
+rockButton.onclick = () => {
+    playerSelection = 'ROCK'
+    console.log(playerSelection)
+}
+
+const resultDiv = document.querySelector('#result')
+    console.log = function(message) {
+    resultDiv.innerHTML += message + '<br>';
+  };
+
+
 
 function game(){
     
@@ -38,7 +62,7 @@ function getComputerChoise(){
 
 
 
-game()
+/*game()
 if(playerWins>computerWins){
     console.log(`Your score: ${playerWins}, Computer score: ${computerWins}, You win, Congratz!!!`)
 }else if(playerWins<computerWins){
@@ -46,7 +70,7 @@ if(playerWins>computerWins){
 }else{
     console.log(`Its tie`)
 }
-
+*/
 
 
 
