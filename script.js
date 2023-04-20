@@ -9,6 +9,7 @@ const rockButton = document.querySelector('#rock')
 paperButton.onclick = () => {
     playerSelection = 'PAPER'
     const computerSelection = getComputerChoise()
+    resultDiv.textContent = ''
     singleRound(playerSelection,computerSelection)
     console.log(`you:${playerWins}, computer :${computerWins}`)
     roundCheck(playerWins,computerWins)
@@ -16,6 +17,7 @@ paperButton.onclick = () => {
 scissorsButton.onclick = () =>{
     playerSelection = 'SCISSORS'
     const computerSelection = getComputerChoise()
+    resultDiv.textContent = ''
     singleRound(playerSelection,computerSelection)
     console.log(`you:${playerWins}, computer :${computerWins}`)
     roundCheck(playerWins,computerWins)
@@ -24,6 +26,7 @@ scissorsButton.onclick = () =>{
 rockButton.onclick = () => {
     playerSelection = 'ROCK'
     const computerSelection = getComputerChoise()
+    resultDiv.textContent = ''
     singleRound(playerSelection,computerSelection)
     console.log(`you:${playerWins}, computer :${computerWins}`)
     roundCheck(playerWins,computerWins)
@@ -63,7 +66,10 @@ function roundCheck(playerWins,computerWins){
         } else {
           console.log(`It's a tie!`)
         }
-        
+        paperButton.disabled = true;
+        rockButton.disabled = true;
+        scissorsButton.disabled = true;
+             
       }
 }
 
