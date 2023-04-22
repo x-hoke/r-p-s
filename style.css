@@ -1,30 +1,68 @@
+html{
+    height: 100%;
+}
 body{
     background-color: bisque;
     display: flex;
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    height: 100%;
     
 }
 button{
     height: 200px;
     width: 200px;
 }
+header{
+    height: 10%;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+footer{
+    height: 10%;
+    background-color: burlywood;
+    display: flex;
+    justify-content: space-around;
+    font-size: small;
+}
+button img{
+    fill: bisque;
+    width: 150px;
+    height: 150px;
+}
+#content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 
 #button-container{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-top: 100px;
+    padding-top: 70px;
+    
 }
 #result-container{
     display: flex;
-    padding: 50px;    
+    padding: 50px;
+    margin-bottom: 50px;    
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+    text-align: center; 
+      
 }
 #result{
+    flex: 1;
+    border: 1px solid black ;
+    padding: 25px;
     
-    margin-top:50px
+    /*margin-top:50px*/
        
 }
